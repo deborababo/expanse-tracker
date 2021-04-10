@@ -1,0 +1,111 @@
+* {
+  background: url(img/landscape.png) peachpuff no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  font-family: "Syne Mono", monospace;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  padding: 0;
+}
+
+/* form */
+input {
+  padding: 5px;
+  margin: 5px 0;
+  border: 2px solid rgb(180, 110, 174);
+  border-radius: 10px;
+  height: 20px;
+  outline: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.new-item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-items: center;
+}
+.date {
+  grid-column: 1/2;
+  justify-self: end;
+  margin-right: 10px;
+}
+.amount {
+  grid-column: 2/3;
+  justify-self: start;
+  margin-left: 10px;
+}
+
+#new-item {
+  width: 500px;
+}
+.button {
+  font-family: "Syne Mono", monospace;
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 10px;
+  border: solid palevioletred;
+  background: palevioletred;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+.button:hover {
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+/* table */
+table {
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+}
+table.customTable {
+  table-layout: fixed;
+  width: 80%;
+}
+th {
+  background: rgb(153, 76, 118);
+}
+#invisible {
+  background-color: transparent;
+}
+.delBtn {
+  font-family: "Syne Mono", monospace;
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 10px;
+  border: solid palevioletred;
+  background: palevioletred;
+  color: whitesmoke;
+  font-size: 0.75rem;
+  outline: none;
+}
+.delBtn:hover {
+  background-color: transparent;
+  color: palevioletred;
+}

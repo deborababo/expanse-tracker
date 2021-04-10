@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Expense Tracker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        Expanse Tracker
+    </header>
+    <main>
+        <p>Please fill the expense details!</p>
+        <form class="form">
+        <div class="new-item"><label for="new-item">New Item:</label>
+        <input type="text" name="new-item"  id="new-item" placeholder="add a new item to your list" required>
+    </div>
+            <div class="date"><label for="date">Date</label>
+        <input type="date" name="date" id="date">
+    </div>
+        <div class="amount"><label for="amount">Amount</label>
+        <input type="number" name="amount"  id="amount"> </div>
+        </form>
+       <div><button class="button" id="button">Add Expense</button>
+        </div> 
+            <table class="customTable" id="customTable">
+                <thead class="thead"><tr>
+                    <th> Expense</th>
+                    <th> Date</th>
+                    <th>Amount</th>
+                    <th id="invisible"></th>
+                </tr>
+            </thead >
+            <tbody id="tbody"> 
+               
+            </tbody>
+             
+            </table>
+        
+    </main>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
