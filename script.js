@@ -1,6 +1,13 @@
 let button=document.getElementById("button");
 let newItem=document.getElementById("new-item");
+let press= document.querySelectorAll(".press");
 button.addEventListener("click", addListAfterClick);
+// press.addEventListener("keydown", addListAfterKeypress);
+// newItem.addEventListener("keydown", addListAfterKeypress);
+
+press.forEach(item => {
+  item.addEventListener('keydown', addListAfterKeypress)
+})
 
 function newItemLength(){
     return newItem.value.length;
@@ -47,6 +54,11 @@ function addListAfterClick (){
  } else {
      alert ("Please fill all form")
  }
+}
+function addListAfterKeypress(event){
+    if(newItemLength()>0 && newItemLength()>0 && event.key==='Enter'){
+    createItemList()
+    } 
 }
 
 
